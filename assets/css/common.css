@@ -1,0 +1,124 @@
+/* Settings */
+/* セッティングスではページの基本スタイルとなる部分を設定している */
+html {
+  font-size: 62.5%;
+}
+body {
+  color: #333333;
+  font-family: '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ', 'Hiragino Kaku Gothic ProN',
+  'Hiragino Sans', sans-serif;
+  font-weight: 500;
+}
+.enFont {
+  font-family: 'Century Gothic', CenturyGothic, '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ',
+  'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif;
+}
+
+
+/* Header */
+.header {
+  width: 200px;
+  min-height: 100vh;
+  border-right: 1px solid #eeeeee;
+  position: relative;
+}
+.header__logoBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+}
+.header__logo {
+  max-width: 200px;
+}
+.header__logo img {
+  width: 100%;
+}
+.header__navListItem, .header__navChildMenuListItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.header__navListItemLink, .header__navChildMenuListItemLink {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  padding: 10px;
+  background-color: #ffffff;
+  transition: .3s;
+  width: 100%;
+}
+.header__navListItemLink--active {
+  background-color: #313131;
+  color: #ffffff;
+  pointer-events: none;
+}
+.header__navListItemLink:hover {
+  background-color: #313131;
+  color: #ffffff;
+}
+.header__navEffectText {
+  transform: translate(0px, 0px);
+  transition: .1s;
+}
+.header__navListItemLink:hover .header__navEffectText {
+  transform: translate(5px, 0px);
+}
+.header__navChildMenuList {
+  position: absolute;
+  top: 0px;
+  left: 200px;
+  z-index: 1000;
+  width: 0px;
+  background-color: #ffffff;
+  height: 100vh;
+  border-right: 1px solid #eeeeee;
+  overflow: hidden;
+  transition: .2s;
+}
+.header__navChildMenuListItem:first-child {
+  margin-top: 109px;
+}
+.header__navChildMenuListItemLink {
+  color: #333333;
+}
+.header__navListItemLink:hover > .header__navChildMenuList {
+  width: 200px;
+}
+.header__navChildMenuListItemLink:hover {
+  background-color: #313131;
+  color: #ffffff;
+}
+
+
+/* Layouts */
+.columnLayout {
+  display: flex;
+}
+.columnLayout__main {
+  margin: 80px 40px;
+}
+
+
+/* Headings */
+.h1-01 {
+  font-size: 4rem;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.h2-02 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* leadTexts */
+.leadText-01 {
+  margin-top: .5em;
+  font-size: 2rem;
+  line-height: 1.2;
+}
